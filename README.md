@@ -5,7 +5,8 @@ Just a simple app which models a coffee machine.
 - The app uses a Priority queue with FIFO policy for same priorities values.
 - The app uses Swing for the UI
 
-* Building the project
+Building the project
+========================
 
 - requires maven, used version: 3.2.1):
 - From root directory run: mvn clean install (to compile and run the tests and create executable jar with dependencies)
@@ -13,7 +14,8 @@ Just a simple app which models a coffee machine.
 - Run the jar: java -jar CoffeeMachine-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
-* Improvements that could be done in the code
+Improvements
+========================
 
 - Add more tests
 - Improve the algorithm in SimulationLoop implementation.
@@ -23,7 +25,8 @@ Just a simple app which models a coffee machine.
 - Improve abstractions on the implementations of PriorityStrategy interface such that we could apply these strategies not to only Engineer instances but to generic Objects having a proper interface provided with methods needed to manipulate the Priority state
 - Improve error messages provided on the UI according to the error cause and to the specific parameter
 
-* Comments on user inputs
+Comments on user inputs
+========================
 
 - In general, the more is the number of engineers in the Simulation, the more is likely for a given engineer to spend greater time in queue.
 - The high priority probability (for an engineer is the probability to become super busy) impacts on the engineers in queue with “normal priority”, but also on the engineers in queue with “high priority” - this is because given the same priority level, the simulation uses a FIFO policy to serve the next coffee -.
