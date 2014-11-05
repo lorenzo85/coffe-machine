@@ -4,6 +4,8 @@ Just a simple app which models a coffee machine.
 
 - The app uses a Priority queue with FIFO policy for same priorities values.
 - The app uses Swing for the UI
+- The app uses Google Guice as dependency injection framework
+- JUnit for tests
 
 Building the project
 ========================
